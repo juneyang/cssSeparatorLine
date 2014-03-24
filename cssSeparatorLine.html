@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testLine</title>
+    <style type="text/css">
+    *{ margin:0; padding:0;}
+    body{ background: #fff }
+    .line-rt{ width:0; height: 0; border: 40px #000 solid; 
+        border-color: #fff transparent transparent;  
+        border-width: 40px 0 0 120px;
+        position: absolute;
+        right:0; top: 0;
+        overflow: hidden;
+    }
+    .line-lb{
+        width:0; height: 0; border: 40px #000 solid; 
+        border-color:  transparent  transparent #fff transparent;  
+        border-width: 0 120px 40px 0;
+        position: absolute;
+        left:0; bottom: 0;
+        overflow: hidden;
+    }
+    .tdBg{ background: #000; position: relative; width: 120px; height: 41px; overflow: hidden; border:1px #000 solid; }
+    </style>
+</head>
+<body>
+    <div class="tdBg">
+        <div class="line-rt"></div> 
+        <div class="line-lb"></div>
+    </div>
+</body>
+</html>
