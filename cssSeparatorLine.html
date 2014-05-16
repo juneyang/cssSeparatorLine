@@ -5,13 +5,19 @@
     <title>testLine</title>
     <style type="text/css">
     *{ margin:0; padding:0;}
-    body{ background: #fff }
+    body{ background: #fff; padding: 20px; }
     .line-rt{ width:0; height: 0; border: 40px #000 solid; 
         border-color: #fff transparent transparent;  
         border-width: 40px 0 0 120px;
         position: absolute;
         right:0; top: 0;
         overflow: hidden;
+    }
+    .txt-rt{ 
+        position: absolute; right: 5px; top: 5px; z-index: 10; text-align: center;
+    }
+    .txt-lb{ 
+        position: absolute; left: 3px; bottom: 4px; z-index: 10; width: 60px; text-align: center;
     }
     .line-lb{
         width:0; height: 0; border: 40px #000 solid; 
@@ -26,7 +32,9 @@
 </head>
 <body>
     <div class="tdBg">
-        <div class="line-rt"></div> 
+        <div class="txt-rt">Date</div>
+        <div class="txt-lb">Projects</div>
+        <div class="line-rt"></div>
         <div class="line-lb"></div>
     </div>
 </body>
